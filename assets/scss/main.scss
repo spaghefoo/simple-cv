@@ -99,16 +99,15 @@ h2 {
 // contact
 .contact {
     line-height: 2rem;
+    color: $color-light;
     &__item {
         position: relative;
-        font-size: 1rem;
+        font-size: 1.5rem;
 
         & > i {
-            background-color: $color-right-col-icon-background;
             color: $color-right-col-icon-primary;
-            font-size: 1rem;
+            font-size: 1.5rem;
             text-align: center;
-            border-radius: 50%;
             padding-top: 0.5rem;
             width: 2rem;
             height: 2rem;
