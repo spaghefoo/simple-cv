@@ -3,7 +3,7 @@
     overflow: hidden;
 
     .left_info {
-        position: fixed;
+        position: relative;
         float: left;
         width: $width-left-col;
         height: 100%;
@@ -19,11 +19,11 @@
         @media screen {
             &::after {
                 content: '2022 © Simple CV  |   GoHugo.io';
-                height: 4rem;
+                height: 2rem;
                 width: 100%;
                 position: absolute;
                 bottom: 0.5rem;
-                color: darken($color-light, 10%);
+                color: darken($color-light, 30%);
             }
         }
     }
