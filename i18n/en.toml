@@ -12,3 +12,6 @@ other = "Skills"
 
 [projects]
 other = "Projects"
+
+[RelevantCourses]
+other = "Relevant Courses"

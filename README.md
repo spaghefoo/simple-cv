@@ -10,6 +10,7 @@ Theme to build a customizeable printable HTML/CSS CV.
  - Printable as A4 PDF
  - HTML5 + CSS3
  - Customizeable colors
+ - Support Persian & Arabic Language
 
 ## Print your PDF CV
 When printing the page in the browser, you'll get a formatted A4 page that can be used as your PDF resume.

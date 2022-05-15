@@ -1,21 +1,17 @@
 $color-light: {{ .Site.Params.colorLight | default "#fff"}} !default;
 $color-dark: {{ .Site.Params.colorDark | default "#666"}} !default;
 $color-page-background: {{ .Site.Params.colorPageBackground | default "#ddd" }} !default;
-
 $color-primary: {{ .Site.Params.colorPrimary | default "#dbdbdb"}} !default;
-
-$color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
-
 $color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#ccc"}} !default;
 $color-icon-secondary: {{ .Site.Params.colorIconSecondary | default "#e3bfb8"}} !default;
-
 $color-icon-background: {{ .Site.Params.colorIconBackground | default "#dbdbdb"}} !default;
-
 $color-left-col-background: {{ .Site.Params.colorLeftColumnBackground | default "#333" }} !default;
 $color-right-col-heading-text: {{ .Site.Params.colorRightColumnHeadingText | default "#666" }} !default;
 $color-right-col-body-text: {{ .Site.Params.colorRightColumnBodyText | default "#666" }} !default;
-$color-right-col-icon-primary: {{ .Site.Params.colorRightColumnIconPrimary | default "#fff" }} !default;
-$color-right-col-icon-background: {{ .Site.Params.colorRightColumnIconBackground | default "#e3bfb8" }} !default;
+
+// Direction for rtl or ltr
+$direction: {{ or (index .Site.Data .Site.Language.Lang).content.Dir .Site.Data.content.Dir | default "ltr" }} !default; 
+
 
 $pages: {{ .Site.Params.pages | default 1}} !default;
 
