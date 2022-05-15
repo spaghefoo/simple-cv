@@ -2,13 +2,20 @@
     position: relative;
     overflow: hidden;
 
-    &__left {
+    .left {
         position: fixed;
         float: left;
         width: $width-left-col;
         height: 100%;
-        padding: 3rem 4rem;
+    }
+    &__info {
         background-color: $color-left-col-background;
+        padding: 1.5rem 2rem;
+    }
+
+    &__left {
+        padding: 3rem 4rem;
+        // background-color: $color-left-col-background;
         @media screen {
             &::after {
                 content: '2022 © Simple CV  |   GoHugo.io';
