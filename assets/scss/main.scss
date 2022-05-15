@@ -7,6 +7,8 @@ $color-primary: {{ .Site.Params.colorPrimary | default "#dbdbdb"}} !default;
 $color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
 
 $color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#ccc"}} !default;
+$color-icon-secondary: {{ .Site.Params.colorIconSecondary | default "#e3bfb8"}} !default;
+
 $color-icon-background: {{ .Site.Params.colorIconBackground | default "#dbdbdb"}} !default;
 
 $color-left-col-background: {{ .Site.Params.colorLeftColumnBackground | default "#333" }} !default;
@@ -68,7 +70,7 @@ body {
     color: $color-light;
 
     & span {
-        color: $color-primary;
+        color: $color-icon-secondary;
     }
 }
 
@@ -101,7 +103,7 @@ h2 {
         font-size: 1.5rem;
 
         & > i {
-            color: $color-right-col-icon-primary;
+            color: $color-icon-primary;
             font-size: 1.5rem;
             text-align: center;
             padding-top: 0.5rem;
