@@ -1,0 +1,14 @@
+[profile]
+other = "مشخصات"
+
+[experience]
+other = "سوابق کاری"
+
+[education]
+other = "تحصیلات"
+
+[skills]
+other = "مهارت ها"
+
+[projects]
+other = "پروژه ها"
