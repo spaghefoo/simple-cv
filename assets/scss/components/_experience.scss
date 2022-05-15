@@ -16,6 +16,7 @@
 
     &__job {
         position: relative;
+        padding-left: 2.5rem;
     }
 
     &__company,
@@ -32,8 +33,10 @@
             padding-top: 0.5rem;
             width: 2rem;
             height: 2rem;
-            margin-right: 0.5rem;
+            // margin-right: 0.5rem;
             margin-bottom: 0.5rem;
+            display: inline-block;
+            vertical-align: middle;
         }
     }
 
