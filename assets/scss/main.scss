@@ -92,55 +92,5 @@ h2 {
 @import "components/skills";
 @import "components/education";
 
-
-
-// contact
-.contact {
-    line-height: 2rem;
-    color: $color-light;
-    &__item {
-        position: relative;
-        font-size: 1.5rem;
-
-        & > i {
-            color: $color-icon-primary;
-            font-size: 1.5rem;
-            text-align: center;
-            padding-top: 0.5rem;
-            width: 2rem;
-            height: 2rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-        & > span {
-            @include vt-center;
-        }
-    }
-}
-
-// avatar
-.avatar {
-    width: 100%;
-    height: 14rem;
-    position: relative;
-    overflow: hidden;
-
-    &__container {
-        @include hz-center;
-        width: 60%;
-        clip-path: circle(50% at 50% 56%);
-        height: 12rem;
-        text-align: center;
-    }
-
-    &__img {
-        object-fit: cover;
-        width: 100%;
-        @include all-center;
-    }
-}
-
-// "functions";
-@function paper_height($width) {
-    @return $width / 0.70695553;
-}
+@import "components/contact";
+@import "components/avatar";
