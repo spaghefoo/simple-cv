@@ -6,7 +6,7 @@ $color-primary: {{ .Site.Params.colorPrimary | default "#e3bfb8"}} !default;
 
 $color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
 
-$color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
+$color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#ccc"}} !default;
 $color-icon-background: {{ .Site.Params.colorIconBackground | default "#e3bfb8"}} !default;
 
 $color-left-col-background: {{ .Site.Params.colorLeftColumnBackground | default "#333" }} !default;
@@ -88,13 +88,9 @@ h2 {
 @import "components/side_section";
 @import "components/experience";
 @import "components/skills";
+@import "components/education";
 
-// education
-.education {
-    &__item {
-        @include avoid-break;
-    }
-}
+
 
 // contact
 .contact {
