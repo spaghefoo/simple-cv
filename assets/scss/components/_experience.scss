@@ -23,6 +23,18 @@
         text-align: left;
         width: 70%;
         float: left;
+        font-size: medium;
+
+        & > i {
+            color: $color-icon-background;
+            font-size: 1rem;
+            text-align: center;
+            padding-top: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
     }
 
     &__company {
