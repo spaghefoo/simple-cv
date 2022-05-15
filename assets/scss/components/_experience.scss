@@ -16,11 +16,6 @@
 
     &__job {
         position: relative;
-        transition: transform 0.2s cubic-bezier($cubic);
-
-        &:hover {
-            transform: translateX(0.5rem);
-        }
     }
 
     &__company,

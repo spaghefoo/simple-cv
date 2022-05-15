@@ -9,7 +9,7 @@ $color-secondary: {{ .Site.Params.colorSecondary | default "#aaa"}} !default;
 $color-icon-primary: {{ .Site.Params.colorIconPrimary | default "#fff"}} !default;
 $color-icon-background: {{ .Site.Params.colorIconBackground | default "#e3bfb8"}} !default;
 
-$color-right-col-background: {{ .Site.Params.colorRightColumnBackground | default "#f5f5f5" }} !default;
+$color-left-col-background: {{ .Site.Params.colorLeftColumnBackground | default "#333" }} !default;
 $color-right-col-heading-text: {{ .Site.Params.colorRightColumnHeadingText | default "#666" }} !default;
 $color-right-col-body-text: {{ .Site.Params.colorRightColumnBodyText | default "#666" }} !default;
 $color-right-col-icon-primary: {{ .Site.Params.colorRightColumnIconPrimary | default "#fff" }} !default;
@@ -17,23 +17,133 @@ $color-right-col-icon-background: {{ .Site.Params.colorRightColumnIconBackground
 
 $pages: {{ .Site.Params.pages | default 1}} !default;
 
-@import "abstract";
-@import "functions";
-@import "mixins";
+// "abstract";
+$width-right-col: 56rem; // 70%
+$page-width: 80rem;
+$width-left-col: $page-width - $width-right-col;
+
+// "mixins";
+@mixin hz-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin vt-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @import "layout";
 @import "base";
-@import "typography";
+
+
+@mixin all-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin avoid-break {
+    @media print {
+        page-break-inside: avoid;
+    }
+}
+
+// "typography";
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 1.12rem;
+    color: $color-dark;
+}
+
+.mainHeading {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: $color-secondary;
+
+    & span {
+        color: $color-primary;
+    }
+}
+
+.section__title {
+    font-size: 2.1rem;
+    color: $color-dark;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
 
 @import "components/section";
 @import "components/side_section";
 @import "components/experience";
-@import "components/education";
-@import "components/references";
-@import "components/contact";
-@import "components/avatar";
 @import "components/skills";
-@import "components/languages";
-@import "components/interests";
-@import "components/404";
 
-@import "custom";
+// education
+.education {
+    &__item {
+        @include avoid-break;
+    }
+}
+
+// contact
+.contact {
+    line-height: 2rem;
+
+    &__item {
+        position: relative;
+        font-size: 1rem;
+
+        & > i {
+            background-color: $color-right-col-icon-background;
+            color: $color-right-col-icon-primary;
+            font-size: 1rem;
+            text-align: center;
+            border-radius: 50%;
+            padding-top: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        & > span {
+            @include vt-center;
+        }
+    }
+}
+
+// avatar
+.avatar {
+    width: 100%;
+    height: 16rem;
+    position: relative;
+    overflow: hidden;
+
+    &__container {
+        @include hz-center;
+        width: 100%;
+        clip-path: circle(50% at 50% 56%);
+        height: 15rem;
+        text-align: center;
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 105%;
+        @include all-center;
+    }
+}
+
+// "functions";
+@function paper_height($width) {
+    @return $width / 0.70695553;
+}

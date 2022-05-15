@@ -8,11 +8,6 @@
                 content: ":"
             }
 
-            &:hover ~ li {
-                background-color: $color-primary;
-                color: $color-light;
-            }
-
         }
 
         & li{
@@ -24,11 +19,6 @@
 
             &:not(:last-child)::after{
                 content: ", "
-            }
-
-            &:hover {
-                background-color: $color-primary;
-                color: $color-light;
             }
         }
     }
