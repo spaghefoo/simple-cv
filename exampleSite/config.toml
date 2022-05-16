@@ -1,4 +1,4 @@
-# languageCode = "en-us"
+languageCode = "en-us"
 defaultContentLanguage = "en" # "en" or "fa"
 enableRobotsTXT = true
 enableEmoji = true
