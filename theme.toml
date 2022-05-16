@@ -9,7 +9,7 @@ homepage = "https://github.com/hootan09/simple-cv"
 # If you have a running demo of the theme.
 # demosite = "https://gohugo.io"
 
-tags = ["cv", "resume", "minimal", "simple"]
+tags = ["cv", "resumes", "minimal", "simple"]
 features = ["simple", "cv", "printable"]
 min_version = "0.41.0"
 
