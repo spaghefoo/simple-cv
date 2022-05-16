@@ -13,5 +13,20 @@ other = "مهارت ها"
 [projects]
 other = "پروژه ها"
 
-[RelevantCourses]
+[relevantCourses]
 other = "دوره های مربوطه:"
+
+[personal]
+other = "مشخصات فردی"
+
+[gender]
+other = "جنسیت"
+
+[birthDate]
+other = "متولد"
+
+[status]
+other = "وضعیت"
+
+[maritalStatus]
+other = "وضعیت تأهل"

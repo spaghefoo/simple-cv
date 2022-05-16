@@ -8,7 +8,12 @@
             font-size: 1.5rem;
         }
         & > span {
-            padding-left: .5rem;
+            @if $direction == "ltr" {
+                padding-left: .5rem;
+            }
+            @else {
+                padding-right: .5rem;
+            }
         }
     }
 

@@ -52,7 +52,12 @@ $width-left-col: $page-width - $width-right-col;
 
 // "typography";
 body {
-    font-family: 'Roboto', sans-serif;
+    @if $direction == "rtl" {
+        font-family: 'Vazirmatn'
+    }
+    @else {
+        font-family: 'Roboto', sans-serif;
+    }
     font-weight: 300;
     line-height: 1.7;
     font-size: 1.12rem;
@@ -90,3 +95,4 @@ h2 {
 
 @import "components/contact";
 @import "components/avatar";
+@import "components/personal"

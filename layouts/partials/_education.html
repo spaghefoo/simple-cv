@@ -18,7 +18,7 @@
                     <i class="fa fa-map-marker-alt"></i><span>{{ .Location | safeHTML }}</span>
                 </h4>
                 {{if .RelevantCourses}}
-                    <h3>{{ i18n "RelevantCourses" }}</h3>
+                    <h3>{{ i18n "relevantCourses" }}</h3>
                     <ul class="education__item">
                         {{range .RelevantCourses}}
                             <li class="education__bullet"></li>-<span>{{ . }}</span>

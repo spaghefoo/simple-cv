@@ -1,4 +1,5 @@
 {{ if .Skills }}
+{{ $Dir := .Dir}}
 {{$len := len .Skills }}
 <div class="sideSection">
     <div class="sideSection__heading">
@@ -9,8 +10,10 @@
             {{ range $index, $item := .Skills }}
                 <li class="skills__bullet">
                     <span>{{ . | safeHTML }}
-                        {{if ne (add $index 1) $len}}
-                            ,
+                        {{if eq $Dir "ltr"}}
+                            {{if ne (add $index 1) $len}}
+                                ,
+                            {{end}}
                         {{end}}
                     </span>
                 </li>

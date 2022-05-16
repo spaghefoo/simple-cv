@@ -16,15 +16,27 @@
 
     &__job {
         position: relative;
-        padding-left: 2.5rem;
+        @if $direction == "ltr" {
+            padding-left: 2.5rem;
+        }
+        @else {
+            padding-right: 2.5rem;
+        }
     }
 
     &__company,
     &__position {
-        text-align: left;
+        direction: $direction;
         width: 70%;
-        float: left;
         font-size: medium;
+        @if $direction == "ltr" {
+            float: left;
+            text-align: left;
+        }
+        @else {
+            float: right;
+            text-align: right;
+        }
 
         & > i {
             color: $color-icon-background;
@@ -36,7 +48,7 @@
             // margin-right: 0.5rem;
             margin-bottom: 0.5rem;
             display: inline-block;
-            vertical-align: middle;
+            // vertical-align: middle;
         }
     }
 
@@ -81,7 +93,12 @@
 
     &__badges {
         display: block;
-        text-align: right;
+        @if $direction == "ltr"{
+            text-align: right;
+        }
+        @else{
+            text-align: left;
+        }
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }

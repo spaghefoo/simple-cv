@@ -13,5 +13,20 @@ other = "Skills"
 [projects]
 other = "Projects"
 
-[RelevantCourses]
+[relevantCourses]
 other = "Relevant Courses"
+
+[personal]
+other= "Personal Info"
+
+[gender]
+other = "Gender"
+
+[birthDate]
+other = "Birth Date"
+
+[status]
+other = "Status"
+
+[maritalStatus]
+other = "Marital Status"

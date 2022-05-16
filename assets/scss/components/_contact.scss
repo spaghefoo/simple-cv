@@ -4,7 +4,7 @@
     &__item {
         position: relative;
         font-size: 1.5rem;
-
+        
         & > i {
             color: $color-icon-primary;
             font-size: 1.5rem;
@@ -17,6 +17,7 @@
         }
         & > span {
             @include vt-center;
+            direction: ltr;
         }
     }
 }

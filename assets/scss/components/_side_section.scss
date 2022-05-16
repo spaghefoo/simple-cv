@@ -30,7 +30,12 @@
         }
 
         &::before {
-            margin-left: -11rem;
+            @if $direction == "ltr" {
+                margin-left: -11rem;
+            }
+            @else {
+                margin-right: -11rem;
+            }
         }
     }
 
