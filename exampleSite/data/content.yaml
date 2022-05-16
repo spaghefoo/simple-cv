@@ -1,18 +1,24 @@
+Dir: ltr # Left to Right Direction
+
 BasicInfo:
-  FirstName: Inês
-  LastName: Almeida
+  FirstName: Mamad
+  LastName: Niki
   Photo: img/avatar.jpg
   Contacts:
-    - Icon: fas fa-phone
-      Info: +44 123 456 789
     - Icon: fas fa-envelope
-      Info: contact@ines-almeida.com
-    - Icon: fas fa-globe
-      Info: ines-almeida.com
+      Info: hootan09@gmail.com
+    - Icon: fas fa-phone
+      Info: (+98) 935 957 89XX
     - Icon: fas fa-map-marker-alt
-      Info: Portugal
+      Info: Iran
+    - Icon: fab fa-linkedin-in
+      Info: linkedin.com/in/hootan09
+    - Icon: fab fa-github
+      Info: github.com/hootan09
+    - Icon: fas fa-globe
+      Info: NikiTv.ir
 
-Profile: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Profile: As a University of Washington graduate and current Amazon intern, I live and breathe software. I have received 5 best-in-class awards for design and mobile-first development. As a front-end developer intern at Amazon, I have implemented real-world industry best practices and turned client/customer concepts into workable models.
 
 Experience:
   - Employer: Super Cool Company
@@ -57,81 +63,40 @@ Experience:
           - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
           - Nisl tincidunt eget nullam non nisi est
         Badges: ['Python', 'MATLAB', 'Data Processing', 'Paradigm Design']
+        
 
 Education:
-  - Course: BSc & MSc in Biomedical Engineering and Biophysics
-    Place: University of Lisbon
+  - Degree: B.S.
+    FieldOfStudy: Computer Science
+    NameofSchool: University of Semnan
+    Location: Iran, Semnan
     Date: Sep 2012 - Nov 2017
-    Details: Specialised in data analysis
+    RelevantCourses:
+      - Data Structures
+      - Algorithm Design
+      - Database Management Systems
+      - Computer Vision
+      - Software Design Methodology
 
-References:
-  - Name: Person One
-    Relation: Co-worker at Super Cool Company
-    Contacts:
-    - Icon: fas fa-phone
-      Info: +44 123 456 790
-    - Icon: fas fa-envelope
-      Info: contact@person-one.com
-    - Icon: fas fa-map-marker-alt
-      Info: Melbourne, Australia
-  - Name: Person Two
-    Relation: Boss at Super Cool Company
-    Contacts:
-    - Icon: fas fa-phone
-      Info: +44 123 456 791
-    - Icon: fas fa-envelope
-      Info: contact@person-two.com
-    - Icon: fas fa-map-marker-alt
-      Info: Sydney, Australia
+Personal:
+  - Gender: Male
+    BirthDate: 1991
+    Status: Free to Work
+    MaritalStatus: Single
+
 
 
 Skills:
-  - Family: Programming
-    Items:
-      - Python
-      - HTML (including Jinja)
-      - Javascript
-      - CSS
-      - SASS
-      - SQL
-      - C#
-      - Bash
-      - MATLAB
-  - Family: Frameworks
-    Items:
-      - Django
-      - Flask
-      - Hugo
-      - React
-  - Family: Developer Tools
-    Items:
-      - Git
-      - Docker
-      - Jenkins
-      - AWS
-  - Family: Misc
-    Items:
-      - Adobe Tools
-      - LaTeX
-
-Languages:
-  - Name: Portuguese
-    Level: Native
-  - Name: English
-    Level: C2
-  - Name: Spanish
-    Level: B1
-  - Name: German
-    Level: B1
-
-Diplomas:
-  - ISTQB Tester Certification (2019)
-  - English Cambridge CAE (2009)
-
-Interests:
-  - Bouldering
-  - Cooking
-  - Windsurfing
-  - Bossa Nova
-  - Design
-  - Languages
+ - Node.js
+ - Linux
+ - Git
+ - Docker
+ - CICD
+ - Jenkins
+ - HTML & CSS
+ - React.js
+ - Next.js
+ - GoLang
+ - Python
+ - Unity3D (C#)
+ - Hugo
