@@ -1,7 +1,7 @@
 # Simple CV Theme
 Theme to build a customizeable printable HTML/CSS CV.
 
-### [Forked From Orginal Repo almeida-cv](https://github.com/ineesalmeida/almeida-cv)
+#### [Forked From Orginal Repo almeida-cv](https://github.com/ineesalmeida/almeida-cv)
 
 ![Screenshot](images/screenshot.png)
 
