@@ -3,14 +3,14 @@ Theme to build a customizeable printable HTML/CSS CV.
 
 #### [Forked From Orginal Repo almeida-cv](https://github.com/ineesalmeida/almeida-cv)
 
-![Screenshot](images/screenshot.png)
+![Screenshot](https://github.com/hootan09/simple-cv/blob/master/images/screenshot.png?raw=true)
 
 # Features
  - Online CV with minor responsiveness
  - Printable as A4 PDF
  - HTML5 + CSS3
  - Customizeable colors
- - Support Persian & Arabic Language
+ - Support [Persian](https://github.com/hootan09/simple-cv/blob/master/images/fa.png?raw=true) & Arabic Language
 
 ## Print your PDF CV
 When printing the page in the browser, you'll get a formatted A4 page that can be used as your PDF resume.
