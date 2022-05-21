@@ -20,10 +20,14 @@
 
     &__left {
         padding: 3rem 4rem;
-        // background-color: $color-left-col-background;
+    }
+
+    &__left_footer {
+        text-decoration: none;
         @media screen {
             &::after {
                 content: '2022 © Simple CV  |   GoHugo.io';
+                padding-left: 4rem;
                 height: 2rem;
                 width: 100%;
                 position: absolute;
