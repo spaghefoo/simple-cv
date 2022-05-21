@@ -27,7 +27,12 @@
         @media screen {
             &::after {
                 content: '2022 © Simple CV  |   GoHugo.io';
-                padding-left: 4rem;
+                @if $direction == "ltr" {
+                    padding-left: 4rem;
+                }
+                @else {
+                    padding-right: 4rem;
+                }
                 height: 2rem;
                 width: 100%;
                 position: absolute;
