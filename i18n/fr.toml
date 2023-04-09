@@ -2,7 +2,7 @@
 other = "A propos de moi"
 
 [experience]
-other = "Experiences Professionnels"
+other = "Experiences Professionnelles"
 
 [education]
 other = "Education"
@@ -11,7 +11,7 @@ other = "Education"
 other = "Compétences"
 
 [projects]
-other = "Projects"
+other = "Projets"
 
 [relevantCourses]
 other = "Relevant Courses"
@@ -20,7 +20,7 @@ other = "Relevant Courses"
 other= "Personal Info"
 
 [gender]
-other = "Gender"
+other = "Sexe"
 
 [birthDate]
 other = "Date de naissance"
@@ -30,3 +30,6 @@ other = "Statut"
 
 [maritalStatus]
 other = "Marital Status"
+
+[liking]
+other = "Passions"

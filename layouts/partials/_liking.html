@@ -1,0 +1,25 @@
+{{ if .Liking }}
+{{ $Dir := .Dir}}
+{{$len := len .Liking }}
+<div class="sideSection">
+    <div class="sideSection__heading">
+        <h2 class="sideSection__title">{{ i18n "liking" }}</h2>
+    </div>
+    <div class="sideSection__content">
+        <ul class="skills__group">
+            {{ range $index, $item := .Liking }}
+                <li class="skills__bullet">
+                    <span>{{ . | safeHTML }}
+                        {{if eq $Dir "ltr"}}
+                            {{if ne (add $index 1) $len}}
+                                ,
+                            {{end}}
+                        {{end}}
+                    </span>
+                </li>
+            {{ end }}
+        </ul>
+        </ul>
+    </div>
+</div>
+{{ end }}
